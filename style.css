@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #111;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 620px;
+  width: 100%;
+  background: #222;
+  border-radius: 1rem;
+  padding: 2rem;
+  color: #fff;
+}
+
+.container form .input_group {
+  margin-bottom: 1rem;
+}
+
+.container form .input_group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.container form .input_group label span {
+  color: red;
+}
+
+.container form .input_group input[type="text"],
+.container form .input_group input[type="email"] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #444;
+  outline: none;
+  border-radius: 0.3rem;
+  padding: 0 1.5rem;
+  font-size: 1.1rem;
+  color: #fff;
+  background: #333;
+  font-family: "Inter", sans-serif;
+}
+
+/* .container form .input_group input[type="text"]:focus,
+.container form .input_group input[type="email"]:focus{
+    outline: 2px solid #009ae1;
+} */
+
+.container .file_container {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #444;
+  border-radius: 1rem;
+  padding: 1rem;
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container .file_container input{
+    display: none;
+}
+
+.container .file_container label{
+    padding: 1rem 2rem;
+    background: #fff;
+    font-size: 1rem;
+    color: #000;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.container .file_container label:is(:hover, :focus-visible){
+    background: #ddd;
+}
+
+.button button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #000;
+    font-size: 1.1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.button{
+    margin-top: 1.5rem;
+}
+
+.button button:is(:hover, :focus-visible){
+    background: #ddd;
+}
